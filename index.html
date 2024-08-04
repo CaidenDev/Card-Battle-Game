@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Battle</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Comfortaa:wght@300..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="game">
+
+        <!-- OPPONENT -->
+
+        <div id="opp-side">
+            <div id="top-panel" class="panel">
+
+                <h2>OPPONENT</h2>
+                    <div id="opp-health-box" class="health-box">
+                        <i class='bx bxs-heart heart'></i>
+                        <p id="opp-hp">20</p>
+                    </div>
+                
+            </div>
+
+            <!-- OPP BATTLEFIELD -->
+
+            <div id="opp-battlefield" class="battlefield">
+            </div>
+
+        </div>
+
+        <!-- SIDE BAR  -->
+
+        <div id="side-bar">
+
+            <div id="hints-box" class="hints-box">
+                <h4>HINTS:</h4>
+                <hr>
+                <p>Choose a card</p>
+            </div>
+            <div id="mod-box">
+                <h4>MODIFIERS:</h4>
+                <hr>
+                <p>FRENCH: <span class="positive" id="mod-unit">+1</span></p>
+            </div>
+
+        </div>
+        <!-- PLAYER -->
+
+        <div id="player-side">
+            <div id="bottom-panel" class="panel">
+
+                <h2>PLAYER</h2>
+                    <div id="player-health-box" class="health-box">
+                        <i class='bx bxs-heart heart'></i>
+                        <p id="player-hp">20</p>
+                    </div>
+            </div>
+
+            <!-- PLAYER BATTLEFIELD -->
+             
+            <div id="player-battlefield" class="battlefield">
+                <div class="card">
+                    <h4 class="card-name">${fighter.name}</h4>
+                    <hr class="card-line">
+                    <p class="card-info"></p>
+                </div>
+            </div>
+
+
+            <!-- PLAYER HAND  -->
+
+            <div id="player-hand" class="hand"></div>
+
+        </div>
+    </div>
+    <button id="draw-fighter-button" onclick="drawInitialHand()">Draw Cards</button>
+    <script src="script.js"> </script>
+</body>
+</html>

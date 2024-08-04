@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark: rgba(0, 0, 0, 0.6);
+}
+
+#game{
+    height: 100vh;
+    width: 100vw;
+    text-wrap: wrap;
+    background-image: url("./pexels-pixabay-235985.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.panel{
+    background-color: var(--dark);
+    height: 40px;
+    width: 50vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    position: absolute;
+}
+
+#opp-side{
+    height: 50vh;
+    width: 100vw;
+    border: 1px solid red;
+    display: flex;
+    
+}
+
+.hints-box{
+    height: 80px;
+    width: 100px;
+    margin: 4px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#hints-box h4, #hints-box p{
+    text-align: center;
+    font-weight: 250;
+    align-items: center;
+    color: white;
+  
+}
+
+#hints-box h4{
+    text-align: center;
+}
+
+hr{
+    margin-bottom: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+#opp-side h2{
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    font-weight: 300;
+    width: 100vw;
+    height: 40px;
+    margin-left: 30px;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.health-box{
+    height: 25px;
+    width: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart{
+font-size: 1.7rem;
+color: rgb(180, 0, 0);
+margin-right: 3px;
+
+}
+
+#opp-hp{
+
+}
+
+#mod-box{
+    margin: 4px;
+    height: 120px;
+    width: 100px;
+    color: white;
+    font-weight: 250;
+    text-align: center;
+}
+
+.positive{
+    color: green;
+}
+
+.negative{
+    color: rgb(180, 0, 0);
+}
+
+#mod-box h4{
+    text-align: center;
+}
+
+#player-side{
+    height: 50vh;
+    width: 100vw;
+    border: 1px solid blue;
+    display: flex;
+    
+}
+
+#bottom-panel{
+    display: flex;
+    justify-content: center;
+}
+
+#player-side h2{
+    text-align: center;
+    display: flex;
+    /* justify-content: center; */
+    font-weight: 300;
+    width: 100vw;
+    height: 40px;
+    margin-left: 25px;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#side-bar{
+    background-color: var(--dark);
+    height: 230px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.battlefield{
+    width: 90%;
+    height: 35vh;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.hand-card{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    height: 160px;
+    width: 80px;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 5px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    height: 190px;
+    width: 100px;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 5px;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.card p {
+    margin: 2px 0;
+    line-height: 1;
+}
+
+.card .value {
+    font-weight: bold;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 10px;
+}
+
+#draw-fighter-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid red;
+}
